@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events</title>
+</head>
+
+<body>
+    <button id="newName">click Now</button>
+    <p id="Demo"></p>
+
+    <script>
+        const button = document.getElementById('newName')
+        const Demo = document.getElementById('newName')
+
+        button.onclick = function () {
+            const Names = new Names()
+            console.log(Names)
+        }
+    </script>
+
+    <button id="showTimeBtn">Click Now</button>
+    <p id="outputTime"></p>
+
+    <script>
+        const showTimeBtn = document.getElementById('showTimeBtn');
+        const outputTime = document.getElementById('outputTime');
+
+        showTimeBtn.onclick = function () {
+            const currentTime = new Date();
+            outputTime.innerHTML = currentTime; // Show the time in <p>
+            console.log(currentTime);           // Also log to console
+        };
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        const button = document.getElementById('newTime')
+        const Demo = document.getElementById('newTime')
+
+        button.onclick = function () {
+            const Time = new Date()
+            console.log(Time)
+        }
+    </script> -->
+
+
+
+</body>
+
+</html>
